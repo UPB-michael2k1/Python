@@ -1,0 +1,20 @@
+# The program should take a word from the user 
+# from the word exclude the vowels( A E I O U ) and print the letters one a time in a separate line ( convert the word in upper case ) 
+# use for and conditional loop ( if-elif-else)
+# Use the continue statement
+user_word = input("Enter your word: ")
+user_word = user_word.upper()
+
+for letter in user_word:
+    if letter == "A":
+        continue
+    elif letter == "E":
+        continue
+    elif letter == "I":
+        continue
+    elif letter == "O":
+        continue
+    elif letter == "U":
+        continue
+    else:
+        print(letter)
