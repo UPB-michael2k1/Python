@@ -1,0 +1,18 @@
+# continue example with while true keyword
+# program to check the largest number 
+largest_number = -9999999
+counter = 0
+
+number = int(input("Enter a number or -1 to end the prgram"))
+while number != -1 : 
+    if number == -1:
+        continue
+    counter += 1
+    if number > largest_number : 
+        largest_number = number
+        number = int(input("Enter a number or type -1 to exit"))
+# if counter == 0 then else will execute
+if counter :
+    print(" The largest_number is ", largest_number)
+else :
+    print(" You haven't entered any number")
