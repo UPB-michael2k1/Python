@@ -1,0 +1,9 @@
+#while loop and continuously asks the user to enter a word unless the user enters "chup" as the secret exit word,
+#in which case the message "You've successfully left the loop." should be printed to the screen, and the loop should terminate.
+
+while True:
+    word = input(" Enter the secret word to leave the loop ")
+    
+    if word == "chup" :
+        break
+print("you have successfully left the loop")
