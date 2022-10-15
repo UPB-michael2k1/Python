@@ -1,0 +1,18 @@
+# write a program which reads the number of blocks the builders have, 
+# and outputs the height of the pyramid that can be built using these blocks.
+# sample output block 6 - height 3 
+# blocks 20 - height 5
+# blocks 1000 - 44
+# blocks 2 - 1 
+
+blocks = int(input("Enter the number of blocks: "))
+
+height = 0
+in_layer = 1
+while in_layer <= blocks:
+    height += 1
+# Height and layer will be increased and blocks will be decreased as per the layers     
+    blocks -= in_layer
+# Finally layers will be increased to start the loop again 
+    in_layer += 1
+print("The height of the pyramid:", height)
